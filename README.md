@@ -14,6 +14,9 @@ FIX: Simplified file name from long interger strings to basic character strings.
 #3. Git commit rejected due to missing user identity.
 FIX: Configured global Git user identity (email and name) to allow for authenticated version control commits.
 
+#4. Issue with git push due to 'origin' not appearing to be a git repository.
+FIX: Added the remote address from my Github repo within the terminal
+
 Features implemented:
 
 #1. Implemented cash app payment button; added the clients username, ensuring that mobile users are directed straight to the client's profile.
