@@ -4,11 +4,15 @@ Why did I build this site? The purposes of building this site is to go first han
 
 Goal? To provide the client with a sleek, fast, and interactive website.
 
-Challenges faced:
+Bugs fixed:
+#1. Ran into an issue to where the video was not playing when loading the website. 
+FIX: Identified that the file path was incorrect. The video file was stored within video and images subdirectory, but the src attribute was looking in the root directory. Updated path to video and images/1000008147.mp4 and added the muted attribute to satisfy browser autoplay req and per client req to remove bg noise. 
 
-#1. Ran into an issue to where the video was not playing when loading the website.
+#2. Issue to where browser was not detecting image even when the image is in the correct folder.
+FIX: Simplified file name from long interger strings to basic character strings. EX: From 1000008742.jpg to test.jpg
 
-Fix: Identified that the file path was incorrect. The video file was stored within video and images subdirectory, but the src attribute was looking in the root directory. Updated path to video and images/1000008147.mp4 and added the muted attribute to satisfy browser autoplay req and per client req to remove bg noise. 
+#3. Git commit rejected due to missing user identity.
+FIX: Configured global Git user identity (email and name) to allow for authenticated version control commits.
 
 Features implemented:
 
