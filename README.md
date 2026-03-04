@@ -4,24 +4,32 @@ Why did I build this site? The purposes of building this site is to go first han
 
 Goal? To provide the client with a sleek, fast, and interactive website.
 
-Bugs fixed:
-#1. Ran into an issue to where the video was not playing when loading the website. 
-FIX: Identified that the file path was incorrect. The video file was stored within video and images subdirectory, but the src attribute was looking in the root directory. Updated path to video and images/1000008147.mp4 and added the muted attribute to satisfy browser autoplay req and per client req to remove bg noise. 
 
-#2. Issue to where browser was not detecting image even when the image is in the correct folder.
-FIX: Simplified file name from long interger strings to basic character strings. EX: From 1000008742.jpg to test.jpg
+Local Development Setup (macOS)
+This project was migrated from Windows to macOS March 4th, 2026. Followed these steps to set up the environment on a new machine.
 
-#3. Git commit rejected due to missing user identity.
-FIX: Configured global Git user identity (email and name) to allow for authenticated version control commits.
+1. Prerequisites
 
-#4. Issue with git push due to 'origin' not appearing to be a git repository.
-FIX: Added the remote address from my Github repo within the terminal
+Homebrew: The package manager for macOS.
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-Features implemented:
+Git & Github CLI:
+brew install git gh
 
-#1. Implemented cash app payment button; added the clients username, ensuring that mobile users are directed straight to the client's profile.
+2. Environment Config
 
-#2. Implemented Venmo payment button; utilized Venmo's /u/ URL scheme for deep-linking, ensuring that mobile users are directed straight to the client's profile within the native app for fast results
+Shell PATH: Ensure Homebrew is added to .zprofile:
+echo 'eval "$(/opt/homebrew/bin/brew
+shellenv)"'>> ~/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
-#3. Implemented Zelle payment button; assigned a modal to allow pop up for the QR code.
--->
+Authentication: Authenticate via the Github CLI:
+git auth login
+
+3. Project install
+git clone <repo url>
+cd project name
+-----------------------
+
+Tools used to build website: 
+Claude, Qodo
