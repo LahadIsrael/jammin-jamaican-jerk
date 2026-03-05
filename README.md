@@ -31,5 +31,5 @@ git clone <repo url>
 cd project name
 -----------------------
 
-Tools used to build website: 
+Tools used: 
 Claude, Qodo

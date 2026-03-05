@@ -44,7 +44,24 @@ Claude:
 3. Replace <br /> tags with CSS margins
 4. Add JavaScript for the Zelle modal
 5. Improve heading hierarchy for accessibility 
+6. Place the about us section before the videos
+7. Add loading="lazy" to have the browser not load an image until the user scrolls to it. This helps to improve initial page load speed
+8. Add playsinline so that videos can autoplay on iOS/Safari environments
 
-Outcome: Made the suggested fixes to improve the overall structure
+Outcome: Made the suggested fixes to improve the overall structure and functionality of the website.
 
+March 5th, 2026
+
+Task: Clean up HTML structure, add styling to the website.
+
+Work done:
+
+Audited the existing HTML and fixed several bugs:
+broken nav links pointing to non-existent section IDs, duplicate video attributes, inconsistent ID casing, and an empty CSS file
+Added missing accessibility/performance attributes — loading="lazy" on all images and playsinline on videos for proper iOS behavior
+Built out a missing About section and restructured the nav to match real page anchors
+Started the CSS from scratch — set up a custom color palette using CSS variables (:root), wrote a full reset, and progressively styled the header, nav, typography, video sections, and menu cards
+Used Flexbox to lay out the menu card grid with responsive wrapping built in
+Learned the difference between margin and padding, how CSS variables work, why * exists, and how flex-wrap handles mobile layouts automatically
+Stack: HTML5 · CSS3 · No frameworks · Caribbean green and yellow color theme 🌴🔥
 -->
