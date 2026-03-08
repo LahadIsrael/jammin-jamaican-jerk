@@ -32,7 +32,7 @@ Features implemented:
 
 Claude AI Code Review:
 
-March 4th, 2026
+Date: March 4th, 2026
 
 Task: Review HTML sructure
 
@@ -50,7 +50,7 @@ Claude:
 
 Outcome: Made the suggested fixes to improve the overall structure and functionality of the website.
 
-March 5th, 2026
+Date: March 5th, 2026
 
 Task: Clean up HTML structure, add styling to the website.
 
@@ -64,4 +64,25 @@ Started the CSS from scratch — set up a custom color palette using CSS variabl
 Used Flexbox to lay out the menu card grid with responsive wrapping built in
 Learned the difference between margin and padding, how CSS variables work, why * exists, and how flex-wrap handles mobile layouts automatically
 Stack: HTML5 · CSS3 · No frameworks · Caribbean green and yellow color theme 🌴🔥
+
+Date: March 6th, 2026
+
+Task: Finalize CSS
+
+Work done:
+
+Changed color scheme
+Applied changes to the menu images, fixed it to where all images are the same height and width
+Added different style font to the h1
+Added flame icon next to the h1
+
+Date: March 7th, 2026
+
+Task: Add Javascript
+
+Work done:
+
+Added a function to the Zelle button so that when clicking on the Zelle button the client's QR code appears, and when clicking close it closes.
+
+Utilized Qodo to review code, and to also check for any security vulnerablities.
 -->
