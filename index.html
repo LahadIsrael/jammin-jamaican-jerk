@@ -29,7 +29,7 @@
       </div>
       <h1>Jammin Jamaican Jerk 🔥</h1>
       <p id="header-intro">Your trip to Jamaica through your tastebuds!</p>
-      <nav>
+      <nav class="nav-titles">
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About Us</a></li>
@@ -41,8 +41,8 @@
     <!-- Main Content -->
     <main>
       <section id="about">
-        <h2>About Us</h2>
-        <p>
+        <h2 class="about-us">About Us</h2>
+        <p class="about-paragraph">
           <span id="veteren-owned">A proud veteran-owned business!</span>
           At Jammin Jamaican Jerk, we are passionate about bringing the vibrant
           flavors of Jamaica to our community. Our recipes are crafted with love
@@ -56,12 +56,12 @@
         </p>
       </section>
       <!-- Featured Dishes Section -->
-      <h2>Featured Jamaican Dishes</h2>
+      <h2 class="jamaican-dishes">Featured Jamaican Dishes</h2>
       <section id="grill-jerk-chicken">
         <h3>Spicy Jerk Chicken</h3>
         <p class="video-description">
-          Our jerk chicken is marinated in a blend of traditional Jamaican spices
-          and slow-cooked to perfection for a smoky, spicy flavor.
+          Our jerk chicken is marinated in a blend of traditional Jamaican
+          spices and slow-cooked to perfection for a smoky, spicy flavor.
         </p>
         <video
           src="media/jerkchicken.mp4"
@@ -74,7 +74,7 @@
         ></video>
       </section>
       <section id="oxtails">
-        <h3>Juicy Slow-Cooked Oxtails</h3>
+        <h3 class="oxtail-head">Juicy Slow-Cooked Oxtails</h3>
         <p class="video-description">
           Our oxtails are slow-cooked to perfection with our signature tropical
           seasoning.
@@ -90,10 +90,12 @@
         ></video>
       </section>
       <section id="rice-and-peas">
-        <h3>Steamed Rice and Peas</h3>
+        <h3 class="rice-head">Steamed Rice and Peas</h3>
         <p class="video-description">
-          Our rice and peas are cooked with traditional Jamaican spices and
-          coconut milk for a rich, flavorful dish.
+          <span>
+            Our rice and peas are cooked with traditional Jamaican spices and
+            coconut milk for a rich, flavorful dish.</span
+          >
         </p>
         <video
           src="media/1000008155.mp4"
@@ -106,10 +108,12 @@
         ></video>
       </section>
       <section id="mac-and-cheese">
-        <h3>Jamaican Mac and Cheese</h3>
+        <h3 class="mac-head">Jamaican Mac and Cheese</h3>
         <p class="video-description">
-          Our mac and cheese is made with a blend of Jamaican spices and a
-          creamy, rich sauce.
+          <span class="mac-description"
+            >Our mac and cheese is made with a blend of Jamaican spices and a
+            creamy, rich sauce.</span
+          >
         </p>
         <video
           src="media/1000008151.mp4"
@@ -125,140 +129,288 @@
       <section id="menu">
         <div class="card1">
           <figure>
-            <img
-              src="media/jerk.jpg"
-              alt="Jerk chicken platter"
-              loading="lazy"
-              width="300"
-              height="400"
-            />
-            <figcaption>Jerk Wing Platter</figcaption>
+            <div class="img-wrap">
+              <img
+                src="media/jerk.jpg"
+                alt="Jerk wing platter"
+                loading="lazy"
+                width="300"
+                height="400"
+              />
+              <span class="sold-out-badge">Sold Out</span>
+            </div>
+            <figcaption class="jerk-wings">Jerk Wing Platter</figcaption>
+            <button class="out-toggle">Mark as Out</button>
           </figure>
+          <!-- Jerk Pork -->
           <figure>
-            <img
-              src="media/oxtails.jpg"
-              loading="lazy"
-              alt="Oxtails"
-              width="300"
-              height="400"
-            />
-            <figcaption>Jerk Pork</figcaption>
+            <div class="img-wrap">
+              <img
+                src="media/jerk-pork.jpg"
+                loading="lazy"
+                alt="Jerk pork"
+                width="300"
+                height="400"
+              />
+              <span class="sold-out-badge">Sold Out</span>
+            </div>
+            <figcaption class="jerk-pork">Jerk Pork</figcaption>
+            <button class="out-toggle">Mark as Out</button>
           </figure>
         </div>
+        <!-- Curry Goat Platter -->
         <div class="card2">
           <figure>
-            <img
-              src="media/curry-goat-platter.jpg"
-              loading="lazy"
-              alt="Curry goat with rice and peas"
-              width="300"
-              height="400"
-            />
-            <figcaption>Curry Goat Platter</figcaption>
+            <div class="img-wrap">
+              <img
+                src="media/curry-goat-platter.jpg"
+                loading="lazy"
+                alt="Curry goat with rice and peas"
+                width="300"
+                height="400"
+              />
+              <span class="sold-out-badge">Sold Out</span>
+            </div>
+            <figcaption class="curry-goat-platter">
+              Curry Goat Platter
+            </figcaption>
+            <button class="out-toggle">Mark as Out</button>
           </figure>
+          <!-- Oxtail Platter -->
           <figure>
-            <img
-              src="media/oxtail-platter.jpg"
-              loading="lazy"
-              alt="Oxtail with rice, peas, and plantains"
-              width="300"
-              height="400"
-            />
-            <figcaption>Oxtail Platter</figcaption>
+            <div class="img-wrap">
+              <img
+                src="media/oxtail-platter.jpg"
+                loading="lazy"
+                alt="Oxtail with rice, peas, and plantains"
+                width="300"
+                height="400"
+              />
+              <span class="sold-out-badge">Sold Out</span>
+            </div>
+            <figcaption class="oxtail-platter">Oxtail Platter</figcaption>
+            <button class="out-toggle">Mark as Out</button>
           </figure>
         </div>
+        <!-- Jerk Chicken Platter -->
         <div class="card3">
           <figure>
-            <img
-              src="media/jerk-chicken-platter.jpg"
-              loading="lazy"
-              alt="Jerk Chicken with rice and peas, and plantains"
-              width="300"
-              height="400"
-            />
-            <figcaption>Jerk Chicken, Rice, and Peas</figcaption>
+            <div class="img-wrap">
+              <img
+                src="media/jerk-chicken-platter.jpg"
+                loading="lazy"
+                alt="Jerk Chicken with rice and peas, and plantains"
+                width="300"
+                height="400"
+              />
+              <span class="sold-out-badge">Sold Out</span>
+            </div>
+            <figcaption class="jerk-platter">
+              Jerk Chicken, Rice, and Peas
+            </figcaption>
+            <button class="out-toggle">Mark as Out</button>
           </figure>
+          <!-- Jamaican Mac and Cheese -->
           <figure>
-            <img
-              src="media/mac-cheese.jpg"
-              loading="lazy"
-              alt="Macaroni and cheese"
-              width="300"
-              height="400"
-            />
-            <figcaption>Jamaican Mac and Cheese</figcaption>
+            <div class="img-wrap">
+              <img
+                src="media/mac-cheese.jpg"
+                loading="lazy"
+                alt="Macaroni and cheese"
+                width="300"
+                height="400"
+              />
+              <span class="sold-out-badge">Sold Out</span>
+            </div>
+            <figcaption class="mac-cheese">Jamaican Mac and Cheese</figcaption>
+            <button class="out-toggle">Mark as Out</button>
           </figure>
         </div>
+        <!-- Fricassee Chicken Platter -->
         <div class="card4">
           <figure>
-            <img
-              src="media/brown-stew-chicken.jpg"
-              loading="lazy"
-              alt="Brown stew chicken with rice and peas, and plantains"
-              width="300"
-              height="400"
-            />
-            <figcaption>Fricassee Chicken Platter</figcaption>
+            <div class="img-wrap">
+              <img
+                src="media/fricassee-chicken-platter.jpg"
+                loading="lazy"
+                alt="Fricassee chicken with rice and peas, and plantains"
+                width="300"
+                height="400"
+              />
+              <span class="sold-out-badge">Sold Out</span>
+            </div>
+            <figcaption class="fchicken-platter">
+              Fricassee Chicken Platter
+            </figcaption>
+            <button class="out-toggle">Mark as Out</button>
           </figure>
+          <!-- Chickpea Platter -->
           <figure>
-            <img
-              src="media/chickpea-platter.jpg"
-              loading="lazy"
-              alt="Chickpeas, rice, and plantains"
-              width="300"
-              height="400"
-            />
-            <figcaption>Chickpeas, Rice, and Plantains</figcaption>
+            <div class="img-wrap">
+              <img
+                src="media/coconut-curried-chickpeas.jpg"
+                loading="lazy"
+                alt="Chickpeas, rice, and plantains"
+                width="300"
+                height="400"
+              />
+              <span class="sold-out-badge">Sold Out</span>
+            </div>
+            <figcaption class="chickpeas-platter">
+              Chickpeas, Rice, and Plantains
+            </figcaption>
+            <button class="out-toggle">Mark as Out</button>
+          </figure>
+        </div>
+        <!-- Garlic Butter Shrimp Platter -->
+        <div class="card5">
+          <figure>
+            <div class="img-wrap">
+              <img
+                src="media/garlic-butter-shrimp.jpg"
+                loading="lazy"
+                alt="Garlic Butter Shrimp with rice and peas, and plantains"
+                width="300"
+                height="400"
+              />
+              <span class="sold-out-badge">Sold Out</span>
+            </div>
+            <figcaption class="garlic-shrimp">
+              Garlic Butter Shrimp Platter
+            </figcaption>
+            <button class="out-toggle">Mark as Out</button>
+          </figure>
+          <!-- Curry Shrimp Platter -->
+          <figure>
+            <div class="img-wrap">
+              <img
+                src="media/curry-shrimp.jpg"
+                loading="lazy"
+                alt="Curry Shrimp with rice and peas, and plantains"
+                width="300"
+                height="400"
+              />
+              <span class="sold-out-badge">Sold Out</span>
+            </div>
+            <figcaption class="shrimp">Curry Shrimp Platter</figcaption>
+            <button class="out-toggle">Mark as Out</button>
           </figure>
         </div>
       </section>
       <!-- Order Now -->
       <section id="order-now">
-        <h2>Order Now</h2>
-        <p>
+        <h2 class="payment-head">Payment Methods</h2>
+        <p class="support-local">
           Support local! We accept direct payments, credit cards, and mobile
           payments to avoid high card fees.
         </p>
-        <a
-          href="https://cash.app/$jamminjj1"
-          class="pay-btn"
-          target="_blank"
-          rel="noopener noreferrer"
-          >$Cash App</a
-        >
-        <a
-          href="https://venmo.com/u/jamminjj1"
-          class="pay-btn"
-          target="_blank"
-          rel="noopener noreferrer"
-          >Venmo</a
-        >
-        <button id="zelle-btn" class="pay-btn">Zelle</button>
-        <div id="zelle-modal" class="hidden">
-          <img src="" alt="payment QR code for Zelle" />
-          <button id="close-modal">Close</button>
-        </div>
+        <p class="ways-to-pay">
+          <span class="pay-methods"
+            >We accept: <strong>$Cash App:</strong> ($jamminjj1),
+            <strong>Venmo:</strong> (@jamminjj1), and
+            <strong>Zelle:</strong> daymianmckenzie@gmail.com
+          </span>
+        </p>
+        <p id="call-now-order">
+          <strong>Call now to order:</strong> (254) 500-6514
+        </p>
       </section>
     </main>
     <footer>
-      <p>
+      <p class="footer-paragraph">
         &copy; 2026 Jammin Jamaican Jerk. All rights reserved.
         <span>Hours of operation: Saturday, 12pm - 5pm.</span>
       </p>
     </footer>
+    <!-- Lightbox -->
+    <div id="lightbox" class="hidden">
+      <img id="lightbox-img" src="" alt="" />
+    </div>
+    <!-- Order Modal -->
+    <div id="order-modal">
+      <div>
+        <h3 class="order-now-text">Order Now</h3>
+        <p class="call-us">Call us to order at: (254) 500-6514</p>
+        <button id="close-order-modal">Close</button>
+      </div>
+    </div>
     <!-- JavaScript -->
     <script>
-      const zelleBtn = document.getElementById("zelle-btn");
-      const zelleModal = document.getElementById("zelle-modal");
-      const closeModal = document.getElementById("close-modal");
+      // Mute all videos
+      document.querySelectorAll("video").forEach((v) => (v.muted = true));
+      // Lightbox
+      const lightbox = document.getElementById("lightbox");
+      const lightboxImg = document.getElementById("lightbox-img");
+      if (lightbox && lightboxImg) {
+        document.querySelectorAll("#menu img").forEach((img) => {
+          img.style.cursor = "zoom-in";
+          img.addEventListener("click", () => {
+            lightboxImg.src = img.src;
+            lightboxImg.alt = img.alt;
+            lightbox.style.display = "flex";
+          });
+        });
 
-      zelleBtn.addEventListener("click", () => {
-        zelleModal.classList.remove("hidden");
+        lightbox.addEventListener("click", () => {
+          lightbox.style.display = "none";
+          lightboxImg.src = "";
+        });
+
+        document.addEventListener("keydown", (event) => {
+          if (event.key === "Escape") {
+            event.preventDefault();
+            lightbox.style.display = "none";
+            lightboxImg.src = "";
+            orderModal.style.display = "none";
+          }
+        });
+      }
+
+      // Show admin buttons only if ?admin=true is in the URL
+      const isAdmin =
+        new URLSearchParams(window.location.search).get("admin") === "true";
+      if (isAdmin) {
+        document.body.classList.add("is-admin");
+      }
+      // Sold Out Toggles
+      document.querySelectorAll("#menu figure[data-item]").forEach((figure) => {
+        const key = "out-" + figure.dataset.item;
+        const btn = figure.querySelector(".out-toggle");
+
+        if (!btn) return;
+
+        if (localStorage.getItem(key) === "true") {
+          figure.classList.add("sold-out");
+          btn.textContent = "Mark as Available";
+        }
+
+        btn.addEventListener("click", () => {
+          const isOut = figure.classList.toggle("sold-out");
+          localStorage.setItem(key, String(isOut));
+          btn.textContent = isOut ? "Mark as Available" : "Mark as Out";
+        });
       });
 
-      closeModal.addEventListener("click", () => {
-        zelleModal.classList.add("hidden");
-      });
+      // order now button
+
+      const orderNowBtn = document.querySelector('a[href="#order-now"]');
+      const orderModal = document.getElementById("order-modal");
+      if (orderNowBtn && orderModal) {
+        const closeOrderModal = document.getElementById("close-order-modal");
+
+        orderNowBtn.addEventListener("click", (event) => {
+          event.preventDefault();
+          orderModal.style.display = "flex";
+        });
+
+        orderModal.addEventListener("click", () => {
+          orderModal.style.display = "none";
+        });
+
+        closeOrderModal.addEventListener("click", () => {
+          orderModal.style.display = "none";
+        });
+      }
     </script>
   </body>
 </html>

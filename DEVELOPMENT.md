@@ -1,4 +1,4 @@
-<!-- For journaling, AI reviews, bug fixes, etc.
+<!-- <!-- For journaling, AI reviews, bug fixes, etc.
 
 Bugs:
 
@@ -85,4 +85,28 @@ Work done:
 Added a function to the Zelle button so that when clicking on the Zelle button the client's QR code appears, and when clicking close it closes.
 
 Utilized Qodo to review code, and to also check for any security vulnerablities.
+-->
+
+<!-- Date: March 17th, 2026
+
+Task: Update JS, CSS, HTML, review code
+
+Work done:
+
+Null guards on orderNowBtn, orderModal, lightbox, and lightboxImg
+
+Renamed closeorderModal to closeOrderModal for consistent casing
+
+String(isOut) for explicit localStorage string storage
+
+Esc key support for closing modals
+
+Admin toggle refactored to use is-admin body class
+
+Fixed display: none on #order-modal so it doesn't show on page load
+
+Updated the font for easier readability and a better user experience
+
+added event.preventDefault(); to prevent the browser from minimizing whe pressing the esc button on a zoomed img.  
+
 -->
